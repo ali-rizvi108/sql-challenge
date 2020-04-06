@@ -1,4 +1,4 @@
-create table1 employees(
+create table employees(
 emp_no int not null,
 birth_date date not null,
 first_name varchar(50) not null,
