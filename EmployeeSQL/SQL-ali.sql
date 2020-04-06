@@ -135,7 +135,8 @@ employees.first_name
 from employees 
 inner join dept_emp on employees.emp_no = dept_emp.emp_no
 inner join departments on dept_emp.dept_no = departments.dept_no
-where departments.dept_name = ('Sales,Developments');
+--inner join departments on dept_emp.dept_no = departments.dept_no
+WHERE departments.dept_name IN ('Sales, Development') 
 
 -----In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
 select last_name, count(last_name) as "employee count"
